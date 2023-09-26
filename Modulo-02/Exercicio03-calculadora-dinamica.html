@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03 - Calculadora dinâmica</title>
+</head>
+<body>
+
+    <script>
+       var numeroInicial = prompt('informe o primeiro número...');
+       var sinal = prompt('informe o sinal da operação...');
+
+       while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'){
+        alert('Favor informe um sinal valido!');
+
+        sinal = prompt('informe o sinal da operação...');
+       }
+
+
+       var numeroFinal = prompt('informe o número final!');
+
+       //Conversão de String para Int
+       numeroInicial = parseInt(numeroInicial);
+       numeroFinal = parseInt(numeroFinal);
+
+       var resultadoFinal = 0;
+
+       if(sinal == '+'){
+            resultadoFinal = numeroInicial + numeroFinal;
+       }
+       else if(sinal == '-'){
+            resultadoFinal = numeroInicial - numeroFinal;
+       }
+       else if(sinal == '*'){
+            resultadoFinal = numeroInicial * numeroFinal;
+       }
+       else if(sinal == '/'){
+            resultadoFinal = numeroInicial / numeroFinal;
+       }
+10
+       alert('O resultado é: ' + resultadoFinal);
+
+
+    </script>
+    
+</body>
+</html>
